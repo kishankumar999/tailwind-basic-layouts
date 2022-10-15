@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="relative1 m-5">
+        <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar"
+            class="mx-3 flex rounded-full bg-gray-800 text-sm focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600 md:mr-0"
+            type="button">
+            <span class="sr-only">Open user menu</span>
+            <img class="h-10 w-10 rounded-full object-cover object-center"
+                src="https://kishankumar999.github.io/images/user-2.jpg" alt="user photo" />
+        </button>
+
+        <!-- Dropdown menu -->
+        <div id="dropdownAvatar" class="absolute z-10 mt-4 w-44 rounded bg-white shadow-xl dark:bg-gray-700">
+            <!-- Nose -->
+            <div
+                class="absolute left-[35px] top-0 z-0 -mt-3.5 h-4 w-4 -translate-x-1/2 translate-y-1/2 rotate-45 transform rounded bg-gray-700">
+            </div>
+            <div class="divide-y divide-gray-100 dark:divide-gray-600">
+                <div class="py-3 px-4 text-sm text-gray-900 dark:text-white">
+                    <div>Bonnie Green</div>
+                    <div class="truncate font-medium">name@flowbite.com</div>
+                </div>
+                <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUserAvatarButton">
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                    </li>
+                </ul>
+
+                <div class="py-1">
+                    <a href="#"
+                        class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">Sign
+                        out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
