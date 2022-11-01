@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ===================================== -->
+    <!-- Sidebar Panel -->
+    <!-- ===================================== -->
+    <div id="sidebar_panel"
+        class="fixed top-0 bottom-0 left-0 w-52 -ml-52 duration-300 space-y-4 bg-slate-200 px-7 pt-5 pb-10">
+        <div class="flex justify-end sm:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+            </svg>
+        </div>
+        <div class="rounded-md border-2 border-dashed border-slate-400 p-3" id="demo">Logo</div>
+        <div class="rounded-md border-2 border-dashed border-slate-400 p-3">Nav Bar Items</div>
+    </div>
+
+    <!-- ===================================== -->
+    <!-- Main Content panel -->
+    <!-- ===================================== -->
+    <div class="h-full max-w-full bg-white p-3 sm:ml-52">
+        <!-- Mobile Header -->
+        <div class="py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="rounded-md border-2 border-dashed border-slate-400 p-3">Logo</div>
+            <!-- Sidebar Toggle Button -->
+            <button onclick="sideBarToggle()" type="button"
+                class="py-2 px-3 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                </svg>
+            </button>
+        </div>
+        <div class="rounded-md border-2 border-dashed border-slate-400 p-3">Content</div>
+    </div>
+
+    <script>
+        function sideBarToggle() {
+            var element = document.getElementById("sidebar_panel");
+            if (element.classList.contains('-ml-52')) {
+                element.classList.add("ml-0");
+                element.classList.remove("-ml-52");
+            } else {
+                element.classList.remove("ml-0");
+                element.classList.add("-ml-52");
+            }
+        }
+    </script>
+</body>
+
+</html>
